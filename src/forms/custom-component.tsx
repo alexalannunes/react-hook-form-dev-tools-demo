@@ -90,6 +90,7 @@ export function BasicCustomComponentForm() {
             render={({ field }) => {
               return (
                 <SelectCity
+                  {...field}
                   value={field.value}
                   onChange={(city) => {
                     field.onChange(city);
