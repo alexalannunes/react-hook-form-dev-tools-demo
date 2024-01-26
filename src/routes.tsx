@@ -7,6 +7,7 @@ import { BasicCustomComponentForm } from "./forms/custom-component";
 import { DynamicFieldsForm } from "./forms/dynamic-fields";
 import { DynamicFieldsCustomComponentForm } from "./forms/dynamic-custom-component";
 import { AsyncForm } from "./forms/async-data";
+import { FormContextForm } from "./forms/form-context";
 
 interface IRouteApp extends IRoute {
   element: JSX.Element;
@@ -37,6 +38,11 @@ const routes: IRouteApp[] = [
     label: "Async Form",
     path: "/async-form",
     element: <AsyncForm />,
+  },
+  {
+    label: "Form Context",
+    path: "/form-form",
+    element: <FormContextForm />,
   },
 ];
 
